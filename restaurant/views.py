@@ -8,7 +8,6 @@ from datetime import datetime
 import json
 from django.views.decorators.csrf import csrf_exempt
 
-
 # Create your views here.
 def home(request):
     return render(request, 'index.html')
