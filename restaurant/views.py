@@ -8,7 +8,7 @@ from datetime import datetime
 import json
 from django.views.decorators.csrf import csrf_exempt
 
-# Create your views here.
+
 def home(request):
     return render(request, 'index.html')
 
@@ -30,7 +30,7 @@ def book(request):
     context = {'form':form}
     return render(request, 'book.html', context)
 
-# Add your code here to create new views
+
 @csrf_exempt
 def bookings(request):
     if request.method == 'POST':
